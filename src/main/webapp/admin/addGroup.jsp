@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Hp
-  Date: 19.04.2024
-  Time: 18:14
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,12 +10,12 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <form>
+            <form action="/admin/group/add" method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input name="groupNamge" type="text" class="form-control" id="name" placeholder="Enter group name">
+                    <input name="groupName" type="text" class="form-control" id="name" placeholder="Enter group name">
                 </div>
-                <button href="/admin/group/add" type="submit" class="btn btn-primary">Save</button>
+                <button  type="submit" class="btn btn-primary text-dark">Save</button>
             </form>
         </div>
     </div>

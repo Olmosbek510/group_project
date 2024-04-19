@@ -17,7 +17,7 @@
 %>
 
 <div class="m-3 ">
-    <button href="/admin/addGroup.jsp" class="btn btn-primary">Add Group</button>
+    <a href="/admin/addGroup.jsp" class="btn btn-primary text-dark">Add Group</a>
 </div>
 
 <div class="container">
