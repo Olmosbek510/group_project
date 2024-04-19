@@ -10,8 +10,6 @@ public class StudentRepo {
 
 
     public static List<Student> getAll() {
-
         return entityManager.createQuery("from Student ",Student.class).getResultList();
-
     }
 }
