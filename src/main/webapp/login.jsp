@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
 </head>
 <body>
 
@@ -22,6 +23,13 @@
                             <label for="password">Password</label>
                             <input name="password" type="password" class="form-control" id="password" placeholder="Enter password">
                         </div>
+
+                        <div>
+                            <label for="remember">Remember me
+                                <input name="remember_me" type="checkbox" id="remember">
+                            </label>
+                        </div>
+
                         <button type="submit" class="btn btn-primary btn-block">Login</button>
                     </form>
                 </div>
