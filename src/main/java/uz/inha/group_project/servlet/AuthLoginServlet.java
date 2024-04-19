@@ -40,9 +40,7 @@ public class AuthLoginServlet extends HttpServlet {
             }
             resp.sendRedirect("/admin/admin.jsp");
 
-
         }
-
 
     }
 }
