@@ -19,7 +19,7 @@
             <form>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter group name">
+                    <input name="groupNamge" type="text" class="form-control" id="name" placeholder="Enter group name">
                 </div>
                 <button href="/admin/group/add" type="submit" class="btn btn-primary">Save</button>
             </form>
