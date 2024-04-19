@@ -20,5 +20,4 @@ public class MyListener implements ServletContextListener {
         DB.entityManager = DB.entityManagerFactory.createEntityManager();
         ServletContextListener.super.contextInitialized(sce);
     }
-
 }
