@@ -25,4 +25,11 @@ public class UserRepo {
         return null;
 
     }
+
+    public static List<User> findAll() {
+        entityManager.getTransaction().begin();
+        List<User> fromUser = entityManager.createQuery("from User ", User.class).getResultList();
+        entityManager.getTransaction().commit();
+        return fromUser;
+    }
 }
