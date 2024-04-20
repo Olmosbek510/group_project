@@ -1,6 +1,7 @@
 package uz.inha.group_project.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,10 +17,15 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-    @Column(nullable = false)
+
+
+    @NotBlank
     private String firstName;
-    @Column(nullable = false)
+
+
+    @NotBlank
     private String lastName;
+
     @ManyToOne
     private Group group;
 }
