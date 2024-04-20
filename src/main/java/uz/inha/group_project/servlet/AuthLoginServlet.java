@@ -33,8 +33,11 @@ public class AuthLoginServlet extends HttpServlet {
             session.setAttribute("currentUser",user);
 
             if (Objects.equals(rememberMe,"on")){
-
+                System.out.println("PPPPPPPPPPPPPPPPPPPPPPPPP");
                 Cookie cookie = new Cookie("currentUser",user.getId().toString());
+                cookie.setHttpOnly(true);
+                cookie.setMaxAge(60*2);
+                cookie.setPath("/");
                 resp.addCookie(cookie);
 
             }
